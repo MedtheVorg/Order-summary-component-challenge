@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  background-color: var(--Pale-blue);
+  padding: 3em;
+}
+
+.main {
+  max-width: 450px;
+  border-radius: 25px;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: #ffffff;
+  margin: 2em;
+}
+
+/*Upper Section that contains the image*/
+.upperSection img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 25px 25px 0px 0px;
+  max-width: 100%;
+}
+
+/* Lower Section */
+.lowerSection {
+  padding: 3em;
+}
+
+.col1 h2 {
+  color: var(--Dark-blue);
+  font-size: 1.8em;
+  font-weight: 900;
+}
+.col1 p {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: var(--Desaturated-blue);
+}
+.pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1em;
+  background: var(--Very-pale-blue);
+  margin: 1.5em 0em;
+}
+.pricing .logo {
+  margin-left: 1em;
+}
+
+.pricing a {
+  margin-right: 1.5em;
+  color: var(--Bright-blue);
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.pricing-col1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details {
+  margin-left: 1em;
+}
+.details h4 {
+  margin-bottom: 0;
+  color: var(--Dark-blue);
+  font-weight: 900;
+}
+.details p {
+  margin-top: 0.3em;
+  color: var(--Desaturated-blue);
+}
+
+/* buttons section*/
+
+.btns button {
+  padding: 1em 2.5em;
+  border: none;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 15px;
+  background: var(--Bright-blue);
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+  box-shadow: 0px 10px 2em var(--Pale-blue);
+  cursor: pointer;
+}
+
+.btns a {
+  text-decoration: none;
+  color: var(--Desaturated-blue);
+  font-weight: 900;
+}
+
+.pricing a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.btns button:hover {
+  opacity: 0.7;
+}
+
+.btns a:hover {
+  color: var(--Dark-blue);
+}
+
+.attribution {
+  width: 100%;
+  padding: 2rem;
+  position: absolute;
+  bottom: 0;
+  font-size: 16px;
+  text-align: center;
+}
